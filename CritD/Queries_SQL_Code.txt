@@ -1,0 +1,42 @@
+Example Code:
+SELECT First, Last, MovieName, YearWon  
+from Oscars  
+where First = [What is the first name of the actor? (OK if not known)] OR  Last = [What is the last name of the actor? (OK if not known)] 
+
+
+SELECT Photograph.Field1, Photograph.EventID, Event.Occasion
+FROM Photograph, Event
+WHERE Photograph.EventID=Event.ID And Photograph.EventID=[If you know the EventID, enter it below.] OR Event.Occasion=[If you know the exact occasion of the picture, enter it below.]
+
+Select Photograph.Field1, Photograph.EventID, Event.Occasion
+From Photograph, Event
+where Photograph.EventID = Event.ID and Photograph.EventID = [If you know the EventID, enter it below:] or event.occasion = [If you know the exact occasion of the picture, enter it below.]
+
+SELECT Photograph.Field1, Photograph.EventID, Event.Occasion
+FROM Photograph, Event
+WHERE (((Photograph.EventID)=[Event].[ID] And (Photograph.EventID)=[What is the event ID? (OK if unknown)])) OR (((Event.Occasion)=[What was the occasion of the picture? (OK if unknown)]));
+
+Select Photograph.Field1, Photograph.ID, Photograph.EventID, Event.Occasion, Event.City, Event.StartDate
+from Photograph, Event
+where Photograph.EventID = Event.ID and Event.City = [In which city did the event take place?]
+order by Event.StartDate, Photograph.ID
+
+Select Photograph.Field1, Photograph.ID, Photograph.EventID, Event.Occasion, Event.City, Event.Country, Event.StartDate
+from Photograph, Event
+where Photograph.EventID = Event.ID and Event.Country = [In which country did the event take place?]
+order by Event.StartDate, Photograph.ID
+
+Select Photograph.Field1, Photograph.ID, Photograph.EventID, Event.Occasion, Event.City, Event.Year, Event.StartDate
+from Photograph, Event
+where Photograph.EventID = Event.ID and Event.Year = [In which year did the event take place? Please enter numbers only.]
+order by Event.Year, Event.StartDate, Photograph.ID
+
+Select Photograph.Field1, Photograph.ID, Photograph.EventID, Event.Occasion, Event.City, Event.EventYear, Event.StartDate
+from Photograph, Event
+where Photograph.EventID = Event.ID and Event.EventYear = [In which year did the event take place?]
+order by Event.EventYear, Event.StartDate, Photograph.ID
+
+select photograph.field1, photograph.id, photograph.eventid, event.occasion, event.startdate
+from photograph, event
+where photograph.eventid = event.id and event.startdate = [What date did the event start in yyyy-mm-dd form?]
+order by event.startdate, photograph.id
