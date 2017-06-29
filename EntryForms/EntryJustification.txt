@@ -1,0 +1,44 @@
+ENTRY FORMS
+Title
+- visually appealing
+- so user knows where they are
+
+Picture
+- visually appealing
+- relevant to theme/purpose of database
+
+ID
+- generated automatically
+- user cannot change it (data validation)
+
+DATES
+- allows user to enter dates
+- gives a pop-up calendar to enter data
+
+Foreign Key Entry
+- drop-down menu
+
+OTHER information
+- no data validation
+- because user decides these
+
+Entry Navigation Buttons
+- allows user to navigate through the the records to find one they want
+
+New button
+- creates blank text fields for user to enter information
+- creates record after information is entered
+
+Delete button
+- deletes current/shown record
+
+Find button
+- allows user to find records by entering any known information
+
+Navigation General
+- leads to place specified by button
+- convenient and user-friendly
+- enables easy navigation
+
+Instructions
+- leads to user assistance

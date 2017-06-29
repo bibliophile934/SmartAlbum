@@ -1,0 +1,26 @@
+Queries - SQL Explained
+Joins
+- link tables with each other so that the datasheet and reports are generated correctly
+- ensures data from both tables relate to the correct records
+
+Order By
+- sort first by the date from oldest to most recent (chronological order)
+- records that share the same data are then sorted by the next field specified
+- cannot only sort by IDs because the photos are not given their IDs by date; they are mixed up
+
+User-Entered Parameters
+- opens a dialog box and runs user's input
+- when match is found in database, condition is run and creates a datasheet
+- dialog box specifies what should be entered
+- also contains clarification sometimes in brackets
+- for Year and EventID, numerical value is needed
+- for date, value in yyyy-mm-dd or yyy/mm/dd is needed
+- otherwise shows error message
+- in Event query, can choose by ID OR occasion or both - data entered into both dialog boxes is searched for
+
+
+FieldName AS DisplayName
+- More professional and intuitive names
+- Named after contents
+- Gives more professional appearance
+- Easier to find where picture is

@@ -1,0 +1,60 @@
+Dialog Boxes Justification
+
+Label/Question
+- asks for user's input
+- can be any data type unless it is a date or ID number
+
+Clarification
+- provides further instructions on what is needed
+- if it says OK if unknown, it informs the user that they can leave the box blank if they don't have this information
+- gives instructions for if the user doesn't know what to input
+
+Text field
+- allows user to enter what will become parameters
+- whatever is in this box is searched for
+
+OK button
+- puts user's parameter in place of the dialog box part of query
+- runs query
+- shows datasheet or report depending on what is run
+- for user, customized report will be shown (they cannot access the queries alone through buttons)
+
+Cancel button
+- does not run query
+- closes dialog box
+
+Close Button
+- acts in same way as cancel button
+- closes dialog box without running query
+
+Access Button
+- opens Access 2013's own help window
+
+
+ERROR MESSAGE
+Label/Message
+- appears any time there is an error message
+
+Error OK
+- closes window
+
+Close button
+- closes window
+
+Hyperlink
+- opens Access 2013's own window
+- sends a report to microsoft
+
+Export OK button
+- saves report in specified location with name inputted into text field
+
+FIND
+Text field
+- user enters information about a record
+- not limited to 1 field
+
+Find next
+- runs search
+
+Cancel
+- closes dialog box
